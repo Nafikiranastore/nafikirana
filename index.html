@@ -2,99 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Nafi Kirana Store | Wholesale Grocery Supplier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nafi Kirana Store | Wholesale Grocer</title>
 
 <style>
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#ffffff;
-    color:#222;
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#0d0d0d;
+  color:#f5f5f5;
 }
 header{
-    background:#0b6b3a;
-    color:#fff;
-    text-align:center;
-    padding:25px 15px;
+  padding:40px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#000,#1a1a1a);
 }
-header h1{margin:0;font-size:32px}
-header p{margin:5px 0}
+header h1{
+  color:#d4af37;
+  font-size:32px;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  background:#000;
+}
 nav a{
-    color:#fff;
-    margin:0 10px;
-    text-decoration:none;
-    font-weight:bold;
-}
-.banner{
-    background:#ffd700;
-    color:#000;
-    text-align:center;
-    padding:12px;
-    font-weight:bold;
+  color:#d4af37;
+  text-decoration:none;
+  font-weight:600;
 }
 section{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 15px;
-}
-h2{
-    color:#0b6b3a;
-    text-align:center;
-}
-.btn{
-    display:inline-block;
-    margin:10px;
-    padding:12px 22px;
-    background:#0b6b3a;
-    color:#fff;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:25px;
+  padding:30px 20px;
 }
 .card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    overflow:hidden;
-    text-align:center;
-    box-shadow:0 2px 6px rgba(0,0,0,0.05);
-}
-.card img{
-    width:100%;
-    height:160px;
-    object-fit:cover;
-}
-.card h3{
-    margin:10px 0 5px;
-}
-.price{
-    color:#0b6b3a;
-    font-weight:bold;
-    margin-bottom:10px;
-}
-.contact{
-    background:#f4f4f4;
-    text-align:center;
-}
-iframe{
-    width:100%;
-    max-width:900px;
-    height:300px;
-    border:0;
-    margin-top:15px;
+  background:#151515;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+  box-shadow:0 0 15px rgba(212,175,55,0.15);
 }
 footer{
-    background:#0b6b3a;
-    color:#fff;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
+  text-align:center;
+  padding:15px;
+  background:#000;
+  color:#aaa;
+}
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 22px;
+  background:#d4af37;
+  color:#000;
+  text-decoration:none;
+  border-radius:25px;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -102,77 +65,40 @@ footer{
 <body>
 
 <header>
-<h1>Nafi Kirana Store</h1>
-<p><strong>Wholesale Grocery Supplier</strong></p>
-<p>विश्वसनीय थोक किराना सप्लायर</p>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
+  <h1>Nafi Kirana Store</h1>
+  <p>Wholesale Grocery Supplier | भरोसे का नाम</p>
+  <a class="btn" href="products.html">View Products</a>
 </header>
 
-<div class="banner">
-🔥 SPECIAL WHOLESALE DISCOUNT AVAILABLE – LIMITED TIME 🔥
-</div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<section id="home">
-<h2>About Us / हमारे बारे में</h2>
-<p>
-<strong>English:</strong><br>
-Nafi Kirana Store is a trusted wholesale grocery supplier providing quality products at the best wholesale prices.
-</p>
-<p>
-<strong>Hindi:</strong><br>
-नाफी किराना स्टोर एक विश्वसनीय थोक किराना सप्लायर है जो थोक दरों पर उच्च गुणवत्ता का किराना सामान उपलब्ध कराता है।
-</p>
+<section>
+  <div class="card">
+    <h2 style="color:#d4af37;">About Us</h2>
+    <p>
+      Nafi Kirana Store ek trusted <b>wholesale grocer</b> hai jo
+      retailers aur bulk buyers ko high quality kirana saman
+      best rates par supply karta hai.
+    </p>
+  </div>
 
-<p><strong>Minimum Order:</strong> ₹5,000 (Wholesale Only)</p>
-
-<div style="text-align:center">
-<a class="btn" href="tel:7549858532">📞 Call Now</a>
-<a class="btn" href="https://wa.me/917549858532" target="_blank">💬 WhatsApp Now</a>
-</div>
-</section>
-
-<section id="products">
-<h2>Our Products & Prices / उत्पाद व दाम</h2>
-
-<div class="products">
-
-<div class="card"><img src="images/rice.jpg"><h3>Rice / चावल</h3><p class="price">₹52 / Kg</p></div>
-<div class="card"><img src="images/wheat.jpg"><h3>Wheat / गेहूं</h3><p class="price">₹32 / Kg</p></div>
-<div class="card"><img src="images/dal.jpg"><h3>Toor Dal / तूर दाल</h3><p class="price">₹110 / Kg</p></div>
-<div class="card"><img src="images/chana.jpg"><h3>Chana Dal / चना दाल</h3><p class="price">₹78 / Kg</p></div>
-<div class="card"><img src="images/urad.jpg"><h3>Urad Dal / उड़द दाल</h3><p class="price">₹95 / Kg</p></div>
-<div class="card"><img src="images/moong.jpg"><h3>Moong Dal / मूंग दाल</h3><p class="price">₹102 / Kg</p></div>
-<div class="card"><img src="images/sugar.jpg"><h3>Sugar / चीनी</h3><p class="price">₹42 / Kg</p></div>
-<div class="card"><img src="images/oil.jpg"><h3>Edible Oil / तेल</h3><p class="price">₹138 / L</p></div>
-<div class="card"><img src="images/atta.jpg"><h3>Atta / आटा</h3><p class="price">₹30 / Kg</p></div>
-<div class="card"><img src="images/maida.jpg"><h3>Maida / मैदा</h3><p class="price">₹34 / Kg</p></div>
-<div class="card"><img src="images/poha.jpg"><h3>Poha / पोहा</h3><p class="price">₹48 / Kg</p></div>
-<div class="card"><img src="images/suji.jpg"><h3>Suji / सूजी</h3><p class="price">₹36 / Kg</p></div>
-<div class="card"><img src="images/masala.jpg"><h3>Masala / मसाला</h3><p class="price">₹220 / Kg</p></div>
-<div class="card"><img src="images/salt.jpg"><h3>Salt / नमक</h3><p class="price">₹18 / Kg</p></div>
-<div class="card"><img src="images/tea.jpg"><h3>Tea / चाय</h3><p class="price">₹260 / Kg</p></div>
-
-</div>
-</section>
-
-<section id="contact" class="contact">
-<h2>Contact & Location / संपर्क व स्थान</h2>
-<p><strong>Nafi Kirana Store</strong></p>
-<p>📞 Phone: 7549858532</p>
-<p>💬 WhatsApp Available</p>
-
-<iframe
-src="https://www.google.com/maps?q=Begusarai,Bihar&output=embed">
-</iframe>
+  <div class="card">
+    <h2 style="color:#d4af37;">Why Choose Us?</h2>
+    <ul>
+      <li>✔ Best Quality Products</li>
+      <li>✔ Wholesale Rates</li>
+      <li>✔ Trusted Local Supplier</li>
+      <li>✔ Fast & Reliable Service</li>
+    </ul>
+  </div>
 </section>
 
 <footer>
-© 2026 Nafi Kirana Store | Wholesale Grocery Business
+  © 2026 Nafi Kirana Store
 </footer>
 
 </body>
