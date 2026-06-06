@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Rice (Chawal)",
+    "category": "Grains",
+    "emoji": "🌾"
+  },
+  {
+    "name": "Wheat (Gehun)",
+    "category": "Grains",
+    "emoji": "🌾"
+  },
+  {
+    "name": "Pulses (Dal)",
+    "category": "Pulses",
+    "emoji": "🥣"
+  },
+  {
+    "name": "Cooking Oil",
+    "category": "Oil",
+    "emoji": "🛢"
+  },
+  {
+    "name": "Sugar & Salt",
+    "category": "Essentials",
+    "emoji": "🧂"
+  }
+]
