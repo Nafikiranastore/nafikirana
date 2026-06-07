@@ -30,16 +30,57 @@ h2{color:#d4af37;}
 </nav>
 
 <section>
-<h2>Our Products</h2>
+    <h2>Our Products</h2>
 
-<div class="card">🌾 Rice (Chawal)</div>
-<div class="card">🌾 Wheat (Gehun)</div>
-<div class="card">🥣 Pulses (Dal)</div>
-<div class="card">🛢 Cooking Oil</div>
-<div class="card">🧂 Sugar & Salt</div>
-<div class="card">📦 All Daily Grocery Essentials</div>
+    <input type="text"
+           id="search"
+           placeholder="Search products..."
+           style="width:100%;padding:10px;margin-bottom:20px;">
 
+    <div id="products-container"></div>
 </section>
+  
+<script>
+async function loadProducts() {
+    const response = await fetch('products.json');
+    const products = await response.json();
 
+    const container = document.getElementById('products-container');
+    const search = document.getElementById('search');
+
+    function display(filteredProducts) {
+        container.innerHTML = '';
+
+        filteredProducts.forEach(product => {
+            container.innerHTML += `
+                <div class="card">
+                    ${product.emoji} ${product.name}
+
+                    <br><br>
+
+                    <a href="https://wa.me/917549858532?text=Hello, I want to order ${encodeURIComponent(product.name)}"
+                       style="color:#d4af37;">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            `;
+        });
+    }
+
+    display(products);
+
+    search.addEventListener('input', () => {
+        const filtered = products.filter(product =>
+            product.name.toLowerCase()
+            .includes(search.value.toLowerCase())
+        );
+
+        display(filtered);
+    });
+}
+
+loadProducts();
+</script>
+  
 </body>
 </html>
